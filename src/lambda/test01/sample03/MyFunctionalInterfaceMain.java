@@ -1,0 +1,20 @@
+package lambda.test01.sample03;
+
+public class MyFunctionalInterfaceMain {
+    public static void main(String[] args) {
+        MyFunctionalInterface fi;
+
+        fi = (x) -> {
+            int result = x * 5;
+            System.out.println(result);
+        };
+        fi.method(4);
+
+        fi = (x) -> { System.out.println(x * 5); };
+        fi.method(4);
+
+        fi = (x) -> System.out.println(x * 5);
+        fi.method(4);
+
+    }
+}
